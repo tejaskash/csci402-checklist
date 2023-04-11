@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "CSCI 402 Checklist",
+    "description": "Allows you track lectures and discussion videos you have seen, for USC's CSCI 402: Operating Systems course!",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "https://merlot.usc.edu/*/lectures.html"
+            ]
+        }
+    ],
+    "icons": {
+        "128": "check.png"
+    }
+}
